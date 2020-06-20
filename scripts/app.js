@@ -50,11 +50,35 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'zergling',
             img: '../img/zergling.png'
         },
+        {
+            name: 'marauder',
+            img: '../img/marauder.png'
+        },
+        {
+            name: 'marauder',
+            img: '../img/marauder.png'
+        },
+        {
+            name: 'executor',
+            img: '../img/executor.png'
+        },
+        {
+            name: 'executor',
+            img: '../img/executor.png'
+        },
+        {
+            name: 'hydralisk',
+            img: '../img/hydralisk.png'
+        },
+        {
+            name: 'hydralisk',
+            img: '../img/hydralisk.png'
+        },
     ]
 
 
     // last but not least, we need to ramdomize our card array!
-    cardArray.sort(() => Math.round(Math.random()*3)) // cardArray.sort(() => 0.5 - Math.random())
+    cardArray.sort(() => Math.round(Math.random()*2)*3) // cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')

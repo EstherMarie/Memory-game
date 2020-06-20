@@ -8,6 +8,7 @@ body {
     background-color: rgb(232, 236, 241);
     font-family: 'Rubik', sans-serif;
     padding: 20px;
+    overflow: hidden;
 }
 
 .content {
@@ -19,7 +20,7 @@ body {
 
 
 h3 {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 .grid {
@@ -28,12 +29,12 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 50%;
-    width: 60%;
+    width: 90%;
 }
 
 img {
     height: auto;
-    width: 20%;
+    width: 15%;
     border: 1px solid dodgerblue;
     border-radius: 8px;
     margin: .5rem;
