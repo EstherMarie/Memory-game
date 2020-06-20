@@ -1,0 +1,13 @@
+@media (max-width: 990px) {
+    body {
+        overflow: auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        width: 20vw;
+    }
+}
