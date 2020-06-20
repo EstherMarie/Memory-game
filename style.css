@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(232, 236, 241);
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3 {
+    margin-bottom: 5vh;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+}
+
+img {
+    height: auto;
+    width: 20%;
+    border: 1px solid dodgerblue;
+    border-radius: 8px;
+    margin: .5rem;
+}
