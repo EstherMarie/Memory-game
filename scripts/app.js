@@ -4,51 +4,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'probe',
-            img: 'img/probe.png'
+            img: '../img/probe.png'
         },
         {
             name: 'probe',
-            img: 'img/probe.png'
+            img: '../img/probe.png'
         },
         {
             name: 'scv',
-            img: 'img/scv.png'
+            img: '../img/scv.png'
         },
         {
             name: 'scv',
-            img: 'img/scv.png'
+            img: '../img/scv.png'
         },
         {
             name: 'drone',
-            img: 'img/drone.png'
+            img: '../img/drone.png'
         },
         {
             name: 'drone',
-            img: 'img/drone.png'
+            img: '../img/drone.png'
         },
         {
             name: 'zealot',
-            img: 'img/zealot.png'
+            img: '../img/zealot.png'
         },
         {
             name: 'zealot',
-            img: 'img/zealot.png'
+            img: '../img/zealot.png'
         },
         {
             name: 'marine',
-            img: 'img/marine.png'
+            img: '../img/marine.png'
         },
         {
             name: 'marine',
-            img: 'img/marine.png'
+            img: '../img/marine.png'
         },
         {
             name: 'zergling',
-            img: 'img/zergling.png'
+            img: '../img/zergling.png'
         },
         {
             name: 'zergling',
-            img: 'img/zergling.png'
+            img: '../img/zergling.png'
         },
     ]
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'img/card_back.png')
+            card.setAttribute('src', '../img/card_back.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -83,12 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (cardsChosen[0] === cardsChosen[1]) {
             // alert('You found a match!')
-            cards[optionOneId].setAttribute('src', 'img/smile.png')
-            cards[optionTwoId].setAttribute('src', 'img/smile.png')
+            cards[optionOneId].setAttribute('src', '../img/smile.png')
+            cards[optionTwoId].setAttribute('src', '../img/smile.png')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'img/card_back.png')
-            cards[optionTwoId].setAttribute('src', 'img/card_back.png')
+            cards[optionOneId].setAttribute('src', '../img/card_back.png')
+            cards[optionTwoId].setAttribute('src', '../img/card_back.png')
             // alert('Try again')
         }
 
