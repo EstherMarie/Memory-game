@@ -4,75 +4,75 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'probe',
-            img: '../img/probe.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946060854329404/probe.png'
         },
         {
             name: 'probe',
-            img: '../img/probe.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946060854329404/probe.png'
         },
         {
             name: 'scv',
-            img: '../img/scv.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946063341289492/scv.png'
         },
         {
             name: 'scv',
-            img: '../img/scv.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946063341289492/scv.png'
         },
         {
             name: 'drone',
-            img: '../img/drone.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946079325913148/drone.png'
         },
         {
             name: 'drone',
-            img: '../img/drone.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946079325913148/drone.png'
         },
         {
             name: 'zealot',
-            img: '../img/zealot.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946068890615879/zealot.png'
         },
         {
             name: 'zealot',
-            img: '../img/zealot.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946068890615879/zealot.png'
         },
         {
             name: 'marine',
-            img: '../img/marine.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946058673029180/marine.png'
         },
         {
             name: 'marine',
-            img: '../img/marine.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946058673029180/marine.png'
         },
         {
             name: 'zergling',
-            img: '../img/zergling.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946072090738768/zergling.png'
         },
         {
             name: 'zergling',
-            img: '../img/zergling.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946072090738768/zergling.png'
         },
         {
             name: 'marauder',
-            img: '../img/marauder.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946056332738631/marauder.png'
         },
         {
             name: 'marauder',
-            img: '../img/marauder.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946056332738631/marauder.png'
         },
         {
             name: 'executor',
-            img: '../img/executor.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946120056668170/executor.png'
         },
         {
             name: 'executor',
-            img: '../img/executor.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946120056668170/executor.png'
         },
         {
             name: 'hydralisk',
-            img: '../img/hydralisk.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946053102993488/hydralisk.png'
         },
         {
             name: 'hydralisk',
-            img: '../img/hydralisk.png'
+            img: 'https://cdn.discordapp.com/attachments/723945997193183250/723946053102993488/hydralisk.png'
         },
     ]
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', '../img/card_back.png')
+            card.setAttribute('src', 'https://cdn.discordapp.com/attachments/723945997193183250/723946075760754769/card_back.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -107,14 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (cardsChosen[0] === cardsChosen[1]) {
             // alert('You found a match!')
-            cards[optionOneId].setAttribute('src', '../img/smile.png')
-            cards[optionTwoId].setAttribute('src', '../img/smile.png')
+            cards[optionOneId].setAttribute('src', 'https://cdn.discordapp.com/attachments/723945997193183250/723946065921048677/smile.png')
+            cards[optionTwoId].setAttribute('src', 'https://cdn.discordapp.com/attachments/723945997193183250/723946065921048677/smile.png')
             cardsWon.push(cardsChosen)
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
         } else {
-            cards[optionOneId].setAttribute('src', '../img/card_back.png')
-            cards[optionTwoId].setAttribute('src', '../img/card_back.png')
+            cards[optionOneId].setAttribute('src', 'https://cdn.discordapp.com/attachments/723945997193183250/723946075760754769/card_back.png')
+            cards[optionTwoId].setAttribute('src', 'https://cdn.discordapp.com/attachments/723945997193183250/723946075760754769/card_back.png')
             // alert('Try again')
         }
         
