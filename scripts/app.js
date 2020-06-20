@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // last but not least, we need to ramdomize our card array!
-    cardArray.sort(() => Math.round(Math.random())) // cardArray.sort(() => 0.5 - Math.random())
+    cardArray.sort(() => Math.round(Math.random()*3)) // cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
@@ -86,12 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionOneId].setAttribute('src', '../img/smile.png')
             cards[optionTwoId].setAttribute('src', '../img/smile.png')
             cardsWon.push(cardsChosen)
+            cards[optionOneId].removeEventListener('click', flipCard)
+            cards[optionTwoId].removeEventListener('click', flipCard)
         } else {
             cards[optionOneId].setAttribute('src', '../img/card_back.png')
             cards[optionTwoId].setAttribute('src', '../img/card_back.png')
             // alert('Try again')
         }
-
+        
         cardsChosen = []
         cardsChosenId = [] // clear both arrays after the selection of the cards
 
