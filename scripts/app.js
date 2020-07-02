@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cardsChosen = [];
 	var cardsChosenId = [];
 	const cardsWon = [];
+	let btn = document.querySelector('#button');
 
 	// create game board
 
